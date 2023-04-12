@@ -1,0 +1,393 @@
+body{
+    background: radial-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(87, 86, 85, 0.866));
+    font-size: 16px;
+}
+
+
+
+
+/*header*/
+
+
+
+
+
+.bg-body-tertiary{
+    background-color: rgba(191, 107, 48, 0.9) !important;
+}
+
+.navbar-brand img{
+    height: 2rem;
+    width: 2rem;
+}
+span{
+    font-size: 1em;
+    font-weight:bolder
+}
+
+@media screen and (min-width: 990px) {
+    .offcanvas-body a:hover{
+        border-bottom: 1px solid rgb(33, 33, 33);
+    }
+    .nav-link {
+        letter-spacing: 2px ;
+    }
+}
+@media (max-width:300px) {
+    span{
+        font-size: 1em;
+    }
+    
+}
+
+
+
+
+
+
+
+                            /*Home*/
+
+
+
+
+
+
+
+
+
+/*DIFERENCIA DE POR EL fixed*/
+
+.main , .footer
+{
+    
+    position: relative;
+    top: 65px;
+}
+@media (max-width:235px) {
+    .main , .footer
+{
+    
+    position: relative;
+    top: 100px;
+}
+}
+
+/*carrusel*/
+@media (min-width:680px) {
+    .carousel-inner{
+        height: 28.12em;
+    }
+    
+}
+
+
+
+
+/*Titulo de home*/
+
+.titulo{
+    font-size: 1.2em;
+    background-color: rgba(191, 107, 48, 0.9);
+    margin: 20px 0;
+}
+/*cards*/
+.contenedor-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2em;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    height: 20%;
+    width: 80%;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+    background-color: rgba(87, 86, 85, 0.866);
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.cards img{
+    height: 70%;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+.titulo-cards{
+    font-size: 1em;
+}
+.parrafo{
+    font-size: .8;
+}
+
+/*Texto nosotros home*/
+
+.nosotros{
+    font-size: 1.2em;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(191, 107, 48, 0.9);
+
+}
+
+.footer{
+    background-color: rgba(191, 107, 48, 0.9);
+}
+.parrafo-ft{
+    font-size: 1em;
+}
+
+@media (min-width:300px) {
+    .cards{
+        height: 23.12em;
+        width: 12.75em;
+    }
+    .titulo-cards{
+        font-size: 1.4em;
+    }
+}
+@media (min-width:680px) {
+    .contenedor-cards{
+        flex-direction: row;
+        justify-content:center ;
+        gap: 3em;
+    }
+    .titulo{
+        font-size: 1.5em;
+    }
+}
+@media (min-width:798px) {
+    .nosotros{
+        display: flex;
+    }
+    .image-nosotros{
+        background:url(../multimedia/image/logo.png) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 15em;
+        width: 15em;
+
+    }
+    .boton{
+        width: 2em;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+                        /*Series y Peliculas*/
+
+
+
+
+
+
+
+
+
+                        .galeria{
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            margin: 5px;
+                            gap: 2rem;
+                            justify-content: center;
+                        }
+                        
+                        .card{
+                                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                                background-color: rgba(146, 146, 146, 0.5);
+                                width: 16.75em;
+                                
+                            }
+                    
+                            .card:hover{
+                                scale: 1.1;
+                                z-index: 1;
+                            }
+                    
+                    
+                        .card-img-top{
+                            height: 20.12em;
+                            width: 100%;
+                        }
+                        /*boton de la card*/
+                        .btn{
+                            background-color: rgba(191, 107, 48, 0.9);
+                        }
+                        .btn:hover{
+                            background-color: rgb(208, 133, 58);
+                        color: rgb(0, 0, 0);
+                        transform: scale(1.2);
+                        box-shadow: 2px 2px 8px  rgba(223, 127, 32, 0.802), -2px -2px 8px  rgba(223, 127, 32, 0.802); }
+                    /*boton para ver mas */
+                    .conteiner-button{
+                        display: flex;
+                        justify-content: center;
+                    }
+                        .boton{
+                            width: 20%;
+                            margin: 30px 0;
+                            border: none;
+                            background: rgba(0, 0, 0, .5);
+                            color: bisque;
+                            transition: all .6s;
+                        }
+                        .boton:hover{
+                            background-color: rgb(208, 133, 58);
+                        color: rgb(0, 0, 0);
+                        transform: scale(1.2);
+                        box-shadow: 2px 2px 8px  rgba(223, 127, 32, 0.802), -2px -2px 8px  rgba(223, 127, 32, 0.802); 
+                        }
+
+
+                        @media (max-width:300px) {
+                            .card-img-top{
+                                height: 70%;
+                                width: 80%; 
+                            }
+                            .card{
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 1em;
+                                height: 20%;
+                                width: 80%;
+                                align-items: center;
+                                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+                                background-color: rgba(87, 86, 85, 0.866);
+                                border-radius: 5px;
+                                color: aliceblue;
+                            }
+                            
+                        }
+
+                                                /* NOSOTROS*/
+
+
+
+
+
+
+
+/*background del texto principal*/
+
+    .bg{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(15, 14, 14, 0.5));
+    }
+
+/*imagen principal */
+
+    .conteiner-flayer{
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        
+    }
+
+    
+    .flayer img{
+        height: 40%;
+        width: 100%;
+
+    }
+    .contend-flayer{
+        padding: 1em;
+        text-align: center;
+        
+        
+    }
+    .contend-flayer p{
+        font-size: .8em;
+    }
+    .parrafo-nosotros{
+        font-size: .6em;
+    }
+    
+    @media (min-width:680px) {
+
+
+        .flayer{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(../multimedia/image/backdrop-BNH.jpg
+        ) no-repeat center center;
+        
+            width: 100%
+        }
+        .flayer img{
+            height:430px ;
+            width: 760px;
+            
+        }
+        .parrafo-nosotros{
+            font-size: 1em;
+        }
+        .contend-flayer p{
+            font-size: 1em;
+        }
+        
+    }
+
+
+
+
+
+
+
+                    /*CONTACTO*/
+
+
+    .form__contend h3{
+        background-color: rgba(224, 219, 219, 0.5);
+        text-align: center;
+    }
+    .form__contend{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(146, 146, 146, 0.5);
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        width: 100%;
+    }
+    .fr{
+        width: 100%;
+    }
+    
+    @media (max-width:300px) {
+        .form__contend h3{
+            font-size: 1em;
+        }
+        
+    }
+
+
+
+
+
+
+
+    /*FOOTER*/
+
+
+.footer{
+    background-color: rgba(191, 107, 48, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
