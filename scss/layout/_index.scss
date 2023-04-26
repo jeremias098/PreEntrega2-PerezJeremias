@@ -1,0 +1,195 @@
+//Titulo de home
+
+.titulo{
+    font-size: 1.1em;
+    background-color: $colorBgGeneral;
+    margin: 20px 0;
+}
+
+//cards
+
+.contenedor-cards{
+    @include d-flex(flex,center,column);
+    
+    margin: 2em 0;
+    gap: 2em;
+}
+.cards{
+    @include d-flex(flex,center,column);
+    font-size: 1em;
+    height: 20%;
+    width: 80%;  
+    @include cardStyle;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.cards img{
+    height: 70%;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+.titulo-cards{
+    font-size: 1em;
+}
+.parrafo{
+    font-size: .8em;
+}
+//Nosotros
+.nosotros{
+    background-color: $colorBgGeneral;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SERIES Y PELICULAS
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 5px;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        background-color: rgba(146, 146, 146, 0.5);
+        width: 16.75em;
+        
+    }
+
+    .card:hover{
+        scale: 1.1;
+        z-index: 1;
+    }
+
+
+.card-img-top{
+    height: 20.12em;
+    width: 100%;
+}
+/*boton de la card*/
+.btn{
+    background-color: $colorBgGeneral;
+}
+.btn:hover{
+    background-color: $colorBgGeneral;
+color: rgb(0, 0, 0);
+transform: scale(1.2);
+box-shadow: $boxShadowBoton }
+/*boton para ver mas */
+.conteiner-button{
+display: flex;
+justify-content: center;
+}
+.boton{
+    width: 20%;
+    margin: 30px 0;
+    border: none;
+    background: rgba(0, 0, 0, .5);
+    color: bisque;
+    transition: all .6s;
+}
+.boton:hover{
+    background-color: rgb(208, 133, 58);
+color: rgb(0, 0, 0);
+transform: scale(1.2);
+box-shadow: $boxShadowBoton; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NOSOTROS
+
+//background del texto principal
+
+.bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(15, 14, 14, 0.5));
+}
+
+//imagen principal 
+
+
+.conteiner-flayer{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    .flayer{
+        img {
+            height: 40%;
+            width: 100%;
+        }
+    }
+    .contend-flayer{
+        padding: 1em;
+        text-align: center;
+        p{
+            font-size: .8em;
+        }
+        
+    }
+}
+.parrafo-nosotros{
+    font-size: .6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CONTACTO
+
+
+.form__contend{
+    @include d-flex(flex,center,column);
+    background-color: $colorBgSecundary;
+    justify-content: center;
+    color: aliceblue;
+    height: 450px;
+    width: 100%;
+    h3{
+        background-color: rgba(224, 219, 219, 0.5);
+        text-align: center;
+    }
+    .fr{
+        width: 100%;
+    }
+}

@@ -1,0 +1,184 @@
+//reset mediaqueries
+@media (max-width:235px) {
+    .main , .footer
+{
+    
+    position: relative;
+    top: 100px;
+}
+}
+
+//navbar
+@media screen and (min-width: 990px) {
+    .offcanvas-body a:hover{
+        border-bottom: 1px solid rgb(33, 33, 33);
+    }
+    .nav-link {
+        letter-spacing: 2px ;
+    }
+}
+@media (max-width:300px) {
+    span{
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width:235px){
+    .container-fluid{
+        .navbar-brand{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:166px){
+    .navbar{
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
+
+
+//HOME
+
+
+
+//carrusel
+@media (min-width:680px) {
+    .carousel-inner{
+        height: 28.12em;
+    }
+    
+}
+//titulo
+@media (min-width:300px) {
+
+    .titulo-cards{
+        font-size: 1.4em;
+    }
+}
+@media (min-width:680px) {
+    
+    .titulo{
+        font-size: 1.5em;
+    }
+}
+
+//cards
+@media (min-width:300px) {
+    .cards{
+        height: 23.12em;
+        width: 12.75em;
+    }
+    .titulo-cards{
+        font-size: 1.4em;
+    }
+}
+@media (min-width:680px) {
+    .contenedor-cards{
+        flex-direction: row;
+        justify-content:center ;
+        gap: 3em;
+    }
+    
+}
+
+
+//nosotros
+@media (min-width:798px) {
+    .nosotros{
+        display: flex;
+    }
+    .image-nosotros{
+        background:url(../multimedia/image/logo.png) ;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 15em;
+        width: 15em;
+
+    }
+    
+}
+
+
+
+
+
+//SERIES Y PELICULAS
+
+@media (max-width:300px) {
+    .card-img-top{
+        height: 70%;
+        width: 80%; 
+    }
+    .card{
+        @include d-flex(flex,center,column);
+        font-size: 1em;
+        height: 20%;
+        width: 80%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+        background-color: rgba(87, 86, 85, 0.866);
+        border-radius: 5px;
+        color: aliceblue;
+        .card-img-top{
+            height: 70%;
+            width: 80%; 
+        }
+    }
+    
+}
+@media (min-width:798px) {
+    .boton{
+        width: 12em;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+//NOSOTROS
+
+@media (min-width:670px) {
+
+
+        .flayer{
+           
+            background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(../multimedia/image/backdrop-BNH.jpg
+        ) no-repeat center center;
+        width: 100%;
+        img {
+            height:430px;
+            width: 760px;
+            
+        }
+
+        }
+        .parrafo-nosotros{
+            font-size: 1em;
+        }
+        .contend-flayer p{
+            font-size: 1em;
+        }
+        
+    }
+
+
+
+
+
+    //  CONTACTO
+
+    @media (max-width:300px) {
+        .form__contend h3{
+            font-size: 1em;
+        }
+        
+    }

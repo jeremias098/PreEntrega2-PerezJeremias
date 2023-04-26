@@ -1,0 +1,14 @@
+
+
+
+.footer{
+    background-color: rgba(191, 107, 48, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: $colorBgGeneral;
+    .parrafo-ft{
+        font-size: 1em;
+    }
+}
